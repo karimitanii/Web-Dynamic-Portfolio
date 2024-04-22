@@ -1,0 +1,329 @@
+html,body{
+    height: 100%
+}
+
+.wrapper-cv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px; 
+    margin-top: 0; 
+}
+
+
+body {
+    background-color: grey;
+    
+    margin: 0;
+    background-image: url(../images/wallpaper.jpg);
+}
+
+
+.row {
+    display: block;
+    width: 100%;
+}
+
+#dropdown-menu {
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 90px;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, 0);   
+     font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+.dropdown-content {
+    cursor: pointer;
+    display: none;
+    background-color: white;
+    position: relative;
+    min-width: 160px;
+    z-index: 1;
+    left: 0;
+    font-weight: normal;
+    font-size: medium;
+}
+
+#dropdown-menu li {
+    text-align: center;
+    list-style-type: none;
+    display: flex; 
+    align-items: center; 
+    padding: 10px; 
+}
+
+#dropdown-menu li i {
+    margin-right: 10px; 
+}
+
+#dropdown-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+#dropdown-menu li:hover {
+    background: grey;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+.content {
+    margin-top: 48px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+
+.profile-pic-frame {
+    border-radius: 50%; 
+    border: 5px solid grey; 
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px; 
+    overflow: hidden; 
+    width: 200px; 
+    height: 200px;
+}
+
+.contact-button {
+    position: fixed;
+    top: 20px; 
+    right: 20px; 
+    padding: 10px 20px;
+    background-color: #0f0f0f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: rgb(92, 90, 90);
+}
+
+
+.social-links {
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 999; 
+    color: white;
+}
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+.social-links li i {
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+    font-size: 20px; 
+}
+
+.social-links li:hover i {
+    transform: scale(1.4);
+}
+
+.social-links .contact-info {
+    font-size: 16px;
+    margin-left: 0px;
+}
+
+#dropdown-menu li:hover i {
+    transform: scale(1.4); 
+}
+
+#dropdown-menu li i {
+    border-radius: 20%; 
+    transition: transform 0.4s ease; 
+}
+
+h1{
+    text-decoration: underline;
+    color: black;
+}
+
+p{
+    font-size: large;
+}
+
+.div-page-info {
+    position: absolute;
+    top: 50px; 
+    left: 200px; 
+    font-size: x-large;
+    color: rgb(92, 90, 90);
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    background-color: #f0f0f0; 
+}
+
+h3{
+    color: black;
+    text-decoration: underline;
+
+}
+.rounded-container {
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 20px;
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.5);   
+        color : rgb(36, 33, 33);
+      }
+
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.project {
+    padding-top: 200px;
+    width: 750px;
+    margin: 0 20px 20px 0; 
+}
+
+.project img {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.project:hover img {
+    transform: scale(1.05); 
+}
+
+.description {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.description h3 {
+    margin-top: 0;
+}
+
+.description p {
+    margin-bottom: 0;
+}
+
+.home-container {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(36, 33, 33);
+    border-radius: 10px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3%;
+
+   
+    font-size: 16px;
+}
+
+.github-info-proj{
+    display: inline-block;
+    top: 12%;
+    left: 50%;
+     background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(36, 33, 33);
+    border-radius: 10px;
+    position: absolute;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+
+}
+
+.about-me-pic {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.about-me-pic img {
+    float: right;
+    width: 30%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+
+
+
+.holder {
+    min-height: 100%;
+    position:relative;
+}
+
+.parent-social-links{
+    bottom: -150px;
+    height: 150px;
+    left: 70%;
+    position: absolute;
+    right: 0;
+    width: 22%;
+    border-radius: 3px;
+}
+
+.about-me-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 24px; /* You can adjust the font size as needed */
+    font-family: Arial, sans-serif; /* Change the font family */
+    line-height: 2; /* Add spacing between the lines */
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 40%;
+    margin-top: 20%;
+    padding: 20px; /* Add padding for better readability */
+}
+
+
+ .download-button {
+    position: fixed;
+    top: 100px; 
+    right: 20px; 
+    padding: 10px 20px;
+    background-color: #0f0f0f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: rgb(92, 90, 90);
+}

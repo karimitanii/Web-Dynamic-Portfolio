@@ -1,0 +1,59 @@
+.plus-ico{
+    background: url("../images/menu.png");
+}
+
+
+.linkedin-ico{
+    background: url("../images/linkedin-image.png");
+
+}
+
+.github-ico{
+    background: url("../images/github.png");
+
+}
+
+
+.email-ico{
+    background: url("../images/email.png");
+
+
+}
+
+.phone-ico{
+    background: url("../images/phone.png");
+        
+
+}
+
+.projects-ico{
+    background: url("../images/project.png");
+
+}
+
+.cv-ico{
+    background: url("../images/cv-icon.png");
+}
+
+.aboutme-ico{
+    background: url("../images/about-me.png");
+}
+
+.home-ico{
+    background: url("../images/home.png");
+}
+
+.ico{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-size: cover;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.ico-l{
+    width: 24px;
+    height: 24px;
+}
+
