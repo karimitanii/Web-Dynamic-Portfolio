@@ -1,3 +1,8 @@
+<?php
+include("session_security.php");
+
+?>
+
 <html>
   <head>
     <title>Karim Itani-Portfolio</title>
@@ -16,16 +21,16 @@
         <div class = "dropdown-content">
           <ul>
                         
-            <a href="home.html">
+            <a href="home.php">
                         <li><i class="ico ico-l home-ico"></i>Home</li>
                         </a>
-                        <a href="aboutme.html">
+                        <a href="aboutme.php">
                             <li><i class="ico ico-l aboutme-ico"></i>About me </li>
                         </a>
-                        <a href="cv.html">
+                        <a href="cv.php">
                             <li><i class="ico ico-l cv-ico"></i>CV</li>
                         </a>
-                        <a href = "project.html">
+                        <a href = "project.php">
                           <li> <i class ="ico ico-l projects-ico"></i>Projects</li>
                         </a>
                         

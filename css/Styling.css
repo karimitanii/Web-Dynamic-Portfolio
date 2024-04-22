@@ -1,3 +1,5 @@
+
+
 html,body{
     height: 100%
 }
@@ -13,7 +15,8 @@ html,body{
 
 body {
     background-color: grey;
-    
+    font-family: Arial, sans-serif;
+
     margin: 0;
     background-image: url(../images/wallpaper.jpg);
 }
@@ -326,4 +329,129 @@ h3{
 
 .download-button:hover {
     background-color: rgb(92, 90, 90);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh; /* Full viewport height */
+    font-size: 35px;
+    font-weight: bold;
+    color: grey; /* Text color */
+}
+
+.paragraph {
+    border-radius: 20px;
+    padding: 20px;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.5);  
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    color: black;
+    border: 2px dashed #f44336;
+    margin: 0 auto; /* Center the container horizontally */
+    box-sizing: border-box; /* Include padding in width calculation */
+    
+}
+
+.paragraph form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.paragraph label {
+    width: 100%; /* Make labels take full width */
+    margin-top: 5px; /* Add space below each label */
+}
+
+.paragraph input[type="text"],
+.paragraph input[type="password"],
+.paragraph select,
+.paragraph input[type="checkbox"],
+.paragraph input[type="radio"] {
+    width: 100%; /* Make inputs take full width */
+    padding: 8px; /* Adjust input and select padding */
+    margin-bottom: 10px; /* Add space below each input/select */
+    box-sizing: border-box; /* Include padding in width calculation */
+    
+}
+
+.paragraph input[type="radio"] {
+    width: auto; /* Reset width for radio buttons */
+    margin-right: 5px; /* Add spacing between radio buttons and labels */
+    
+}
+
+.button {
+    padding-block: 35px;
+    padding-inline: 35px;
+    border-width: thick;
+    width: 100%; /* Set button width to 100% of container */
+    
+    font-size: 20px; /* Adjust font size for button text */
+    background-color: #000000;
+    color: white;
+    border: 4px solid grey; /* Set border width and color */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    
+    
+    background-color:  grey;
+    border-color:black; /* Change border color on hover */
+}
+
+.login-container {
+            position: absolute;
+            top: 20%;
+            left: 20px;
+            transform: translateY(-50%);
+            text-align: center;
+            border-radius: 5px;
+            border-color: grey;
+             border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 20px;
+        width: 20%;
+        background-color: rgba(255, 255, 255, 0.5);   
+        color : rgb(36, 33, 33);
+        }
+
+        .login-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .login-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color:black; /* Grey background color */
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-button:hover {
+            background-color: #606060; /* Darker grey on hover */
+        }
+.hello-php{
+   
+    border-radius: 5px;
+    background-color: grey;
+    color : black;
+    position: absolute;
+    top: 30%; 
+    font-size: x-large;
+    left :10%;
+    padding: 10px 20px; 
+    border-radius: 10px; 
 }

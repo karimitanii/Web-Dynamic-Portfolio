@@ -21,12 +21,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['firstname'] = $user['firstname'];
             $_SESSION['lastname'] = $user['lastname'];
 
-            header('Location: ../frontend/index.php');
+            header('Location: ../pages/home.php');
             exit;
         }
     }
 
     
-    echo "<script>alert('Invalid username or password.'); window.location = 'index.html';</script>";
+    echo "<script>alert('Invalid username or password.'); window.location = '../pages/login-page.php';</script>";
 }
 ?>

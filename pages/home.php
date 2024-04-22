@@ -1,3 +1,11 @@
+<?php
+include("session_security.php");
+$fullname = $_SESSION["firstname"] . ' ' . $_SESSION['lastname'];
+
+?>
+
+
+
 <html>
   <head>
     <title>Karim Itani-Portfolio</title>
@@ -7,23 +15,25 @@
   <body>
     <div class = "div-page-info">
   Home-page
+  
 </div>
+<div class = "hello-php">     <li><b>Hello, <?php echo htmlspecialchars($fullname); ?>!</b></li> </div>
     <div class = "row" id="header">
       <div id="dropdown-menu">
         <span> <i class = "ico plus-ico"></i></span>
         <div class = "dropdown-content">
           <ul>
                         
-            <a href="home.html">
+            <a href="home.php">
                         <li><i class="ico ico-l home-ico"></i>Home</li>
                         </a>
-                        <a href="aboutme.html">
+                        <a href="aboutme.php">
                             <li><i class="ico ico-l aboutme-ico"></i>About me </li>
                         </a>
-                        <a href="cv.html">
+                        <a href="cv.php">
                             <li><i class="ico ico-l cv-ico"></i>CV</li>
                         </a>
-                        <a href = "project.html">
+                        <a href = "project.php">
                           <li> <i class ="ico ico-l projects-ico"></i>Projects</li>
                         </a>
                         
@@ -35,6 +45,9 @@
     <div class= "profile-pic-frame">
       <img src = "../images/1694984816618.jpeg" class ="profile-pic">
     </div>
+
+           
+
 
     <div class = "home-container">
       <p> Hello my name is karim itani and welcome to my Portfolio website.There are 4 sections in this website with each section giving you an insight about my work Experience or my life. Browse and Enjoy!</p>
