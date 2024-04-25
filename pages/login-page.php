@@ -46,9 +46,9 @@ function Login() {
 
 function ClearForm() {
     var Form = document.querySelector("form[name='login-form']");
-    Form.elements["username"].value = ""; // Clear username field
-    Form.elements["password"].value = ""; // Clear password field
-    Form.elements["cbcaptcha"].checked = false; // Uncheck "I am human" checkbox
+    Form.elements["username"].value = ""; 
+    Form.elements["password"].value = ""; 
+    Form.elements["cbcaptcha"].checked = false; 
 }
 </script>
 

@@ -9,9 +9,9 @@ if (file_exists($usersFile)) {
     $users = [];
 }
 
-// Check if the HTTP method is POST
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Retrieve form data from POST request
+   
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
     $username = $_POST['username'];
@@ -22,9 +22,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $language = $_POST['language'];
     $isHuman = isset($_POST['cbcaptcha']) ? true : false;
 
-    // Validate form data here as needed
+    
 
-    // Check if username already exists
+   
     foreach ($users as $user) {
         if ($user['username'] === $username) {
             echo "<script>alert('Username already exists, please choose another.'); window.location = '../pages/signup-page.php';</script>";
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    // Create new user object
+    
     $newUser = [
         'firstname' => $firstname,
         'lastname' => $lastname,
@@ -45,13 +45,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'isHuman' => $isHuman
     ];
 
-    // Add new user to users array
+  
     $users[] = $newUser;
 
-    // Save updated users array back to JSON file
     file_put_contents($usersFile, json_encode($users));
 
-    // Redirect user to success page after registration
-    echo "<script>alert('Registration successful.'); window.location = '../pages/home.php';</script>";
+echo "<script>alert('Registration successful.'); window.location.href = '../pages/login-page.php';</script>";
 }
 ?>

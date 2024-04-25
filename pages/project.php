@@ -1,5 +1,5 @@
 <?php
-include("session_security.php");
+include_once("../be/session_security.php");
 
 ?>
 <html>
@@ -37,51 +37,37 @@ include("session_security.php");
         </div>
       </div>
     </div>
-
     
 
-<div class="project-container">
+    <a href="#socialLinksSection" class="contact-button">Contact Me</a>
+<a href  = "../be/logout.php" class ="logout-button">Log Out </a>
+
+    
+<div class = "project-container">
+    
+    <?php
+$json_file = '../be/pics.json';
+
+$json_data = file_get_contents($json_file);
+
+$projects = json_decode($json_data, true);
+?>
+
+<?php foreach ($projects as $project): ?>
     <div class="project">
-         <a href="https://github.com/karimitanii">
-        <img src="../images/Untitled.png" alt="Project 1">
+        <a href="https://github.com/karimitanii">
+            
+            <img src="<?php echo $project['link']; ?>" alt="Project Image">
         </a>
         <div class="description">
-            <h3>Password Strength Checker</h3>
-            <p>Evaluates the password entered in the website using an
-AI model created with Python (TensorFlow).
-</p>
+            
+            <h3><?php echo $project['project_name']; ?></h3>
+           
+            <p><?php echo $project['description']; ?></p>
         </div>
     </div>
-    <div class="project">
-                 <a href="https://github.com/karimitanii">
+<?php endforeach; ?>
 
-        <img src="../images/Untitled1.png"Project 2">
-                 </a>
-        <div class="description">
-            <h3>BBLC</h3>
-            <p>A newly constructed programming language that complies the language and outputs in assembly code(arm v8)</p>
-        </div>
-    </div>
-    <div class= "project">
-                 <a href="https://github.com/karimitanii">
-
-        <img src="../images/database-pic.jpg"Project 3">
-                 </a>
-        <div class="description">
-            <h3>Data-Base</h3>
-            <p>A well constructed data base for a sports club which covers all its applications(Oracle)</p>
-        </div>
-    </div>
-    <div class= "project">
-                 <a href="https://github.com/karimitanii">
-
-        <img src="../images/Untitled.2png.png"Project 4">
-                 </a>
-        <div class="description">
-            <h3>Batman-Runner Game</h3>
-            <p>Basic runner game in a 2D environment created with Python(pygame).</p>
-        </div>
-    </div>
 
 </div>
 
@@ -94,7 +80,9 @@ AI model created with Python (TensorFlow).
 
 </div>
 
-<a href="#socialLinksSection" class="contact-button">Contact Me</a>
+
+
+
     
     <div class = " parent-social-links">
     <div class="social-links" id ="socialLinksSection">

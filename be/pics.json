@@ -1,0 +1,22 @@
+[
+    {
+        "project_name": "BBLC",
+        "link": "../images/Untitled1.png",
+        "description": "A newly constructed programming language that compiles the language and outputs in assembly code (ARM v8)"
+    },
+    {
+        "project_name": "Data-Base",
+        "link": "../images/database-pic.jpg",
+        "description": "A well constructed database for a sports club which covers all its applications (Oracle)"
+    },
+    {
+        "project_name": "Batman-Runner Game",
+        "link": "../images/Untitled.2png.png",
+        "description": "Basic runner game in a 2D environment created with Python (pygame)"
+    },
+    {
+        "project_name": "PassChecker",
+        "link": "../images/Untitled.png",
+        "description": "Evaluates the password entered in the website using an AI model created with Python (TensorFlow)."
+    }
+]

@@ -200,16 +200,17 @@ h3{
 
 
 .project-container {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: center; 
     align-items: center; 
 }
 
 .project {
-    padding-top: 200px;
+    position: relative;
     width: 750px;
-    margin: 0 20px 20px 0; 
+    margin: 0 auto;
+    padding-top: 200px;
 }
 
 .project img {
@@ -254,20 +255,20 @@ h3{
 
 .github-info-proj{
     display: inline-block;
-    top: 12%;
-    left: 50%;
-     background-color: rgba(255, 255, 255, 0.5);
+    top: 6% ;
+    left: 48%;
+    background-color: rgba(255, 255, 255, 0.5);
     color: rgb(36, 33, 33);
     border-radius: 10px;
     position: absolute;
-        transform: translate(-50%, -50%);
-        padding: 10px;
-
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    
 }
 
 .about-me-pic {
     position: absolute;
-    top: 50%;
+    top: 60%;
     right: 20px;
     transform: translateY(-50%);
     border-radius: 10px;
@@ -304,14 +305,14 @@ h3{
 
 .about-me-container {
     background-color: rgba(255, 255, 255, 0.5);
-    font-size: 24px; /* You can adjust the font size as needed */
-    font-family: Arial, sans-serif; /* Change the font family */
-    line-height: 2; /* Add spacing between the lines */
+    font-size: 24px; 
+    font-family: Arial, sans-serif; 
+    line-height: 2; 
     border-radius: 5px;
     margin-left: 20px;
     width: 40%;
     margin-top: 20%;
-    padding: 20px; /* Add padding for better readability */
+    padding: 20px; 
 }
 
 
@@ -335,10 +336,10 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh; /* Full viewport height */
+    height: 25vh; 
     font-size: 35px;
     font-weight: bold;
-    color: grey; /* Text color */
+    color: grey; 
 }
 
 .paragraph {
@@ -350,8 +351,8 @@ h3{
     font-family: Arial, sans-serif;
     color: black;
     border: 2px dashed #f44336;
-    margin: 0 auto; /* Center the container horizontally */
-    box-sizing: border-box; /* Include padding in width calculation */
+    margin: 0 auto; 
+    box-sizing: border-box; 
     
 }
 
@@ -363,8 +364,8 @@ h3{
 }
 
 .paragraph label {
-    width: 100%; /* Make labels take full width */
-    margin-top: 5px; /* Add space below each label */
+    width: 100%; 
+    margin-top: 5px; 
 }
 
 .paragraph input[type="text"],
@@ -372,16 +373,16 @@ h3{
 .paragraph select,
 .paragraph input[type="checkbox"],
 .paragraph input[type="radio"] {
-    width: 100%; /* Make inputs take full width */
-    padding: 8px; /* Adjust input and select padding */
-    margin-bottom: 10px; /* Add space below each input/select */
-    box-sizing: border-box; /* Include padding in width calculation */
+    width: 100%; 
+    padding: 8px; 
+    margin-bottom: 10px; 
+    box-sizing: border-box; 
     
 }
 
 .paragraph input[type="radio"] {
-    width: auto; /* Reset width for radio buttons */
-    margin-right: 5px; /* Add spacing between radio buttons and labels */
+    width: auto; 
+    margin-right: 5px; 
     
 }
 
@@ -389,12 +390,12 @@ h3{
     padding-block: 35px;
     padding-inline: 35px;
     border-width: thick;
-    width: 100%; /* Set button width to 100% of container */
+    width: 100%;
     
-    font-size: 20px; /* Adjust font size for button text */
+    font-size: 20px; 
     background-color: #000000;
     color: white;
-    border: 4px solid grey; /* Set border width and color */
+    border: 4px solid grey;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -403,7 +404,7 @@ h3{
     
     
     background-color:  grey;
-    border-color:black; /* Change border color on hover */
+    border-color:black; 
 }
 
 .login-container {
@@ -433,7 +434,7 @@ h3{
             display: inline-block;
             padding: 12px 24px;
             font-size: 16px;
-            background-color:black; /* Grey background color */
+            background-color:black; 
             color: white;
             text-decoration: none;
             border-radius: 25px;
@@ -441,7 +442,7 @@ h3{
         }
 
         .login-button:hover {
-            background-color: #606060; /* Darker grey on hover */
+            background-color: #606060; 
         }
 .hello-php{
    
@@ -454,4 +455,22 @@ h3{
     left :10%;
     padding: 10px 20px; 
     border-radius: 10px; 
+}
+
+
+
+.logout-button {
+    position: relative;
+    top: 100px; 
+    left: 91% ; 
+    padding: 10px 20px;
+    background-color: #0f0f0f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: rgb(92, 90, 90);
 }

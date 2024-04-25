@@ -1,5 +1,5 @@
 <?php
-include("session_security.php");
+include_once("../be/session_security.php");
 $fullname = $_SESSION["firstname"] . ' ' . $_SESSION['lastname'];
 
 ?>
@@ -55,6 +55,7 @@ $fullname = $_SESSION["firstname"] . ' ' . $_SESSION['lastname'];
 
 
     <a href="#socialLinksSection" class="contact-button">Contact Me</a>
+    <a href  = "../be/logout.php" class ="logout-button">Log Out </a>
     
     <div class = " parent-social-links">
     <div class="social-links" id ="socialLinksSection">

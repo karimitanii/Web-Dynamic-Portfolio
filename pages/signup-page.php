@@ -112,10 +112,10 @@
         Form.elements["email"].value = "";
         Form.elements["password"].value = "";
         Form.elements["confirmPassword"].value = "";
-        Form.elements["sex"].value = "m"; // Set default radio button value
-        Form.elements["dob"].value = ""; // Clear date of birth field
-        Form.elements["language"].value = -1; // Set default language value
-        Form.elements["cbcaptcha"].checked = false; // Uncheck "I am human" checkbox
+        Form.elements["sex"].value = "m"; 
+        Form.elements["dob"].value = ""; 
+        Form.elements["language"].value = -1; e
+        Form.elements["cbcaptcha"].checked = false; 
     }
 </script>
 
